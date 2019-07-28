@@ -1,0 +1,32 @@
+{% extends 'state/base.html' %}
+	{%block body_block%} 
+		{% load staticfiles %}
+		<br><br>
+		<center>
+		<div class = "container" align="center">
+			<h2> 	
+				<u>Add Station's Data</u>
+			</h2>
+			<p>
+				Do you want to log out from the portal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="/accounts/logout">
+					<button type="button" class="btn btn-outline-danger">
+						log out
+					</button>
+				</a>
+			</p>
+		</div>
+		
+		<br><br><br><br>
+		<h3 align="center"> The date should be enter in the form of "MM/DD/YYYY" like "12/31/2001"</h3>
+		<br><br>
+		<div class = "container" align="center">
+			<form method = post>
+				{{form.as_p}}
+				{%csrf_token%}
+				<input type = submit class="btn btn-primary" value="Submit Data">
+			</form>
+		</div>
+		<center>
+		<br><br><br><br><br><br>
+	{%endblock%}

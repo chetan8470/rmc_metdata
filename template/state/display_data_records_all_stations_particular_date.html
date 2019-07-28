@@ -1,0 +1,14 @@
+{% extends 'state/base.html' %}
+	{%block body_block%} 
+		{% load staticfiles %}
+		<br><br><br>
+		<div align="center">
+			<h1> Display Data Records All Stations Particular Date Result </h1>
+			<form method = post action = "/display_data_records_all_stations_particular_date_result/">
+				{{form.as_p}}
+				{%csrf_token%}
+				<input type = submit class="btn btn-primary" value="Download Data">
+			</form>
+		</div>
+		
+	{% endblock %}

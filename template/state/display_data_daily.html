@@ -1,0 +1,15 @@
+{% extends 'state/base.html' %}
+	{%block body_block%} 
+		{% load staticfiles %}
+		<br><br><br>
+		<div align="center">
+			<h1>Display Data on Particular Day </h1>
+			<form method = post action = "/display_data_daily_result/">
+				{{form.as_p}}
+				{%csrf_token%}
+				<input type = submit class="btn btn-primary" value="Display Data">
+			</form>
+
+		</div>
+		
+	{% endblock %}

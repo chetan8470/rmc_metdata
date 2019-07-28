@@ -1,0 +1,33 @@
+{% extends 'state/base.html' %}
+	{%block body_block%} 
+		{% load staticfiles %}
+		<br><br><br>
+		
+		
+		<div class="jumbotron jumbotron-fluid" style="height: 300px;" >
+			<div class="container" >
+				<h1> Thank You you data is sucessfully added!!! </h1>
+				<br>
+					<div class="row" style="height: 100px;">
+						<div class="col-sm-6">
+							<div class="card">
+								<div class="card-body">
+									<h5 class="card-title">Do you want to add more data </h5>
+									<a href="/station_temperature_form" class="btn btn-primary">Add data</a>
+								</div>
+							</div>
+						</div>
+			
+						<div class="col-sm-6">
+							<div class="card">
+								<div class="card-body">
+									<h5 class="card-title">Do you want to logout from the session</h5>
+									<a href="/accounts/logout" class="btn btn-primary">Logout</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+		
+	{% endblock %}

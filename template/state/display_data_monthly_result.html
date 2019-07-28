@@ -1,0 +1,55 @@
+{% extends 'state/base.html' %}
+	{%block body_block%} 
+		{% load staticfiles %}
+		<br><br><br>
+		<div class = "container" align="left">
+			<table class="table table-bordered" >
+			{% if result %}
+				<center> <h2><u>Monthly Data List </u></h2></center><br>
+				<thead align="center">
+					<th> Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+					<th> State </th>
+					<th> Station </th>
+					<th> Max Temp. </th>
+					<th> Max Temp. Previous</th>
+					<th> Max Normal </th>
+					<th> Max Change </th>
+					<th> Max Departure </th>
+					<th> Min Temp. </th>
+					<th> Min Temp. Previous. </th>
+					<th> Min Normal </th>
+					<th> Min Change </th>
+					<th> Min Departure </th>
+					<th> Rainfall </th>
+				</thead>
+				{% for r in result %}
+					<tr>
+						<td align="center">{{r.date}}</td>
+						<td align="center">{{r.state}}</td>
+						<td align="center">{{r.station}}</td>
+						<td align="center">{{r.Maximum_temperature}}</td>
+						<td align="center">{{r.Maximum_temperature_previous}}</td>
+						<td align="center">{{r.Maximum_normal}}</td>
+						<td align="center">{{r.Maximum_change}}</td>
+						<td align="center">{{r.Maximum_departure}}</td>
+						<td align="center">{{r.Minimum_temperature}}</td>
+						<td align="center">{{r.Minimum_temperature_previous}}</td>
+						<td align="center">{{r.Minimum_normal}}</td>
+						<td align="center">{{r.Minimum_change}}</td>
+						<td align="center">{{r.Minimum_departure}}</td>
+						<td align="center">{{r.rainfall}}</td>
+					</tr>
+				{% endfor%}
+			{% else %}
+				<h1> <center>No Record is found in this Month</center></h1>
+			{% endif %}
+			</table>
+			
+			<center>
+				<a href="/display_data_monthly" class="btn btn-primary">Display Another Year Data</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="/" class="btn btn-primary">Home Page</a>
+			</center>
+		</div>
+		
+	{% endblock %}

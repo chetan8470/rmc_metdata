@@ -1,0 +1,142 @@
+{% extends 'state/base.html' %}
+	{%block body_block%} 
+		{% load staticfiles %}
+		<br><br>
+		<h1 class = "container" align="center">
+			<b><u> List of States : </u></b>
+		</h1>
+		<br><br>
+		<table class = "container" align="center">
+			<tr >
+				<td width=400px> 
+					<div class="card" style="width: 18rem;">
+					  <img src = "{% static "images/dl.jpg"%}" class="card-img-top" alt="...">
+					  <div class="card-body">
+						<h5 class="card-title">Delhi</h5>
+						<p class="card-text">Delhi, officially the National Capital Territory of Delhi, is a city and a union territory of India containing New Delhi, <br><br>the capital of India.</p>
+						<a href="/delhi" class="btn btn-primary">Go To Delhi</a>
+					  </div>
+					</div>
+				</td>
+				<td width=400px> 
+					<div class="card" style="width: 18rem;">
+					  <img src = "{% static "images/hr.jpg "%}" class="card-img-top" alt="...">
+					  <div class="card-body">
+						<h5 class="card-title">Haryana</h5>
+						<p class="card-text">The name of Haryana instantly conjures up the image of a State which astonishingly combines both-antiquity and plenty. The Vedic land of Haryana has been a cradle of Indian culture</p>
+						<a href="/haryana" class="btn btn-primary">Go To Haryana</a>
+					  </div>
+					</div>
+				</td>
+				<td width=400px> 
+				<div class="card" style="width: 18rem;">
+					  <img src = "{% static "images/pnb.jpg "%}" class="card-img-top" alt="...">
+					  <div class="card-body">
+						<h5 class="card-title">Punjab</h5>
+						<p class="card-text">Punjab is a state in northern India. Forming part of the larger Punjab region of the Indian subcontinent, the state is bordered by the states of Jammu and Kashmir </p>
+						<a href="/punjab" class="btn btn-primary">Go To Punjab</a>
+					  </div>
+					</div>
+				</td>
+			</tr>
+		
+			<tr>
+				<td width=400px> 
+					<br><br>
+					<div class="card" style="width: 18rem;">
+					  <img src = "{% static "images/jk.jpg "%}" class="card-img-top" alt="...">
+					  <div class="card-body">
+						<h5 class="card-title">Jammu_and_Kashmir</h5>
+						<p class="card-text">Jammu and Kashmir is a state in northern India, often denoted by its acronym, J&K. It is located mostly in the Himalayan mountains, and shares borders with the states of Himachal Pradesh and Punjab to the south.</p>
+						<a href="/jk" class="btn btn-primary">Go To Jammu And Kashmir</a>
+					  </div>
+					</div>
+				</td>
+				<td width=400px> 
+					<br><br>
+					<div class="card" style="width: 18rem;">
+					  <img src = "{% static "images/uk.jpg "%}" class="card-img-top" alt="...">
+					  <div class="card-body">
+						<h5 class="card-title">Uttarakhand</h5>
+						<p class="card-text">Uttarakhand, formerly known as Uttaranchal, is a state in the northern part of India. It is often referred to as the Devabhumi due to a large number of Hindu temples and pilgrimage centres found throughout the state.</p>
+						<a href="/uk" class="btn btn-primary">Go To Uttarakhand</a>
+					  </div>
+					</div>
+				</td>
+				<td width=400px> 
+					<br><br>
+				<div class="card" style="width: 18rem;">
+					  <img src = "{% static "images/hp.jpg "%}" class="card-img-top" alt="...">
+					  <div class="card-body">
+						<h5 class="card-title">Himachal_Pradesh</h5>
+						<p class="card-text">Himachal Pradesh is a state in the northern part of India. Situated in the Western Himalayas,The state's name was coined by acharya Diwakar Datt Sharma, one of the state's eminent Sanskrit scholars throughout the state. </p>
+						<br>
+						<a href="/hp" class="btn btn-primary">Go To Himachal Pradesh</a>
+					  </div>
+					</div>
+				</td>
+			</tr>
+			
+			<tr>
+				<td width=400px> 
+					<br><br>
+					<div class="card" style="width: 18rem;">
+					  <img src = "{% static "images/upe.jpg "%}" class="card-img-top" alt="...">
+					  <div class="card-body">
+						<h5 class="card-title">Uttar_pradesh_East</h5>
+						<p class="card-text">Uttar Pradesh is a state in north-central region of India. With over 200 million inhabitants, it is the most populous state in India as well as the most populous country subdivision in the world.</p>
+						<a href="/up_east" class="btn btn-primary">Go TO Uttar Pradesh(East)</a>
+					  </div>
+					</div>
+				</td>
+				<td width=400px>
+					<br><br>
+					<div class="card" style="width: 18rem;">
+					  <img src = "{% static "images/rje.jpg "%}" class="card-img-top" alt="..."height = "150px">
+					  <div class="card-body">
+						<br><br>
+						<h5 class="card-title">Rajasthan_East</h5>
+						<p class="card-text">Rajasthan is located in the northwestern part of the subcontinent. It is bordered on its west and northwest by Pakistan, on its north and northeast by the states of Punjab, Haryana .</p>
+						<br>
+						<a href="/rajasthan_east" class="btn btn-primary">Go To Rajasthan(East)</a>
+					  </div>
+					</div>
+				</td>
+				<td width=400px> 
+					<br><br>
+				<div class="card" style="width: 18rem;">
+					<img src = "{% static "images/rjw.jpg "%}" class="card-img-top" alt="..." >
+					  <div class="card-body">
+						<h5 class="card-title">Rajasthan_west</h5>
+						<p class="card-text">Rajasthan is located in the northwestern part of the subcontinent. It is bordered on its west and northwest by Pakistan, on its north and northeast by the states of Punjab, Haryana .</p>
+						<a href="/rajasthan_west" class="btn btn-primary">Go To Rajasthan(West)</a>
+					  </div>
+					</div>
+				</td>
+			</tr>
+			
+			<tr>
+				<td width=400px> 
+					
+				</td>
+				<td width=400px> 
+					<br><br>
+					<div class="card" style="width: 18rem;">
+					  <img src = "{% static "images/upw.jpg "%}" class="card-img-top" alt="...">
+					  <div class="card-body">
+						<h5 class="card-title">Uttar_pradesh_West</h5>
+						<p class="card-text">Uttar Pradesh is a state in north-central region of India. With over 200 million inhabitants, it is the most populous state in India as well as the most populous country subdivision in the world.</p>
+						<a href="/up_west" class="btn btn-primary">Go To Uttar Pradesh(West)</a>
+					  </div>
+					</div>
+				</td>
+				<td width=400px> 
+					
+				</td>
+			</tr>
+			
+		</table>  
+	
+			
+			
+	{% endblock %}

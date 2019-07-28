@@ -1,0 +1,65 @@
+{% extends 'state/base.html' %}
+	{%block body_block%} 
+		{% load staticfiles %}
+		
+		<div class="jumbotron jumbotron-fluid" style="height: 500px;" >
+			<div class="container" >				
+					<div class="row" style="height: 100px;">
+						<div class="col-sm-6">
+							<div class="card">
+								<div class="card-body">
+									<h5 class="card-title">Station-wise Annual Data</h5>
+									<a href="/display_data_annually" class="btn btn-primary">click here...</a>
+								</div>
+							</div>
+						</div>
+			
+						<div class="col-sm-6">
+							<div class="card">
+								<div class="card-body">
+									<h5 class="card-title">Station-wise monthly data</h5>
+									<a href="/display_data_monthly" class="btn btn-primary">click here...</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+			<br>
+			<div class="container" >
+				<div class="row" style="height: 100px;">
+					<div class="col-sm-6">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">Data of a State on Particular Date</h5>
+								<a href="/display_data_daily" class="btn btn-primary">click here...</a>
+							</div>
+						</div>
+					</div>
+		
+					<div class="col-sm-6">
+						<div class="card">
+							<div class="card-body">
+								<h5 class="card-title">All stations Records of a Particular Date</h5>
+								<a href="/display_data_records_all_stations_particular_date" class="btn btn-primary">click here...</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<center>
+			<div class="container" >
+					<div>
+						<div class="col-sm-6">
+							<div class="card">
+								<div class="card-body">
+									<h5 class="card-title">Data of a station for a specific Duration</h5>
+									<a href="/display_data_date_specification_duration" class="btn btn-primary">click here...</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+			</center>
+		</div>
+	{% endblock %}

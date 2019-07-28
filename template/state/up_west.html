@@ -1,0 +1,31 @@
+{% extends 'state/base.html' %}
+	{%block body_block%} 
+		{% load staticfiles %}
+		<br><br><br>
+		<div class="jumbotron jumbotron-fluid" style="height: 300px;" >
+			<div class="container" >
+				
+					<div class="row" style="height: 100px;">
+						<div class="col-sm-6">
+							<div class="card">
+								<div class="card-body">
+									<h5 class="card-title"><u>Add Uttar Pradesh(West) Temperature Records</u> :</h5>
+									<p class="card-text">This form is filled by the the authenticated people. It require ID and pass.</p>
+									<a href="/station_temperature_form" class="btn btn-primary">Add Data</a>
+								</div>
+							</div>
+						</div>
+			
+						<div class="col-sm-6">
+							<div class="card">
+								<div class="card-body">
+									<h5 class="card-title"><u>Uttar Pradesh(West) Display Data</u> :</h5>
+									<p class="card-text">From this portal we can see the data according to our requirements.It conatin five different portal</p>
+									<a href="/up_west_display_data" class="btn btn-primary">Display Data</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	{% endblock %}
